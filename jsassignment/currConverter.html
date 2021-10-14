@@ -1,0 +1,63 @@
+<script>
+function usdfunc(event){
+  
+    var targetCurrency = event.target.value;
+    
+    var conversion;
+    var dollarValue = document.converter.dollar.value;
+    
+    switch (targetCurrency) {
+      case "eur":
+        conversion = dollarValue * 0.73640;
+        break;
+      case "mxn":
+        conversion = dollarValue * 0.60984;
+        break;
+      case "gbp":
+        conversion = dollarValue * 13.2436;
+        break;
+      case "jpy":
+        conversion = dollarValue * 102.490;
+        break;
+      case "rup":
+        conversion = dollarValue * 74.28;
+        break;  
+    }
+    
+    var output = document.getElementById("output");
+    output.innerHTML = "$" + dollarValue + " = " + targetCurrency + " " + conversion;
+  
+  }
+</script>
+
+
+
+  <html>
+      <head><title>currency converter</title>
+    </head>
+      <body>
+        <form name="converter">
+            <label>Dollar Amount: <input type="text" name="dollar"></label> 
+             <br>
+             <br>
+            
+            
+            Please select a currency type:
+            <select id="select" onchange="usdfunc(event);">
+            <option selected disabled>Select Currency</option>
+            <option value="eur" >Euro</option> 
+            <option value="mxn" >Mexican Peso</option>
+            <option value="gbp" >British Pound</option>
+            <option value="jpy" >Japanese Yen</option>
+            <option value="rup" >Indian rupee</option>
+            </select>
+            
+            
+            <br><br>
+            
+            
+            <p id="output"></p>
+      </body>
+  </html>
+  
+  
