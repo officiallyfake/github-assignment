@@ -1,0 +1,507 @@
+
+<!doctype html>
+
+<html id="ng-app"
+      ng-controller="DegreedAppCtrl"
+      ng-class="{'isMobile':isMobile}"
+      class="raphael "
+      lang="en-US"
+      dir="ltr"
+      ng-csp="no-unsafe-eval"
+      ng-app="degreedNgxApp"
+      ng-strict-di>
+<head>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="SHORTCUT ICON" href="/favicon32.ico">
+<title>Degreed | Degreed</title>
+
+<meta name="description" content="Degreed connects learning, talent development, and internal mobility opportunities in one place - so you can reinvent yourself one skill at a time.">
+<meta name="author" content="Degreed.com">
+<meta property="og:title" content="Degreed">
+<meta property="og:image" content="https://prod.degreedcdn.com/content/img/meta/default.jpg?v=1079504129046564">
+<meta property="og:url" content="https://degreed.com/plan/1499097">
+<meta property="og:site_name" content="Degreed.com" />
+
+<meta property="og:description"
+      content="Degreed connects learning, talent development, and internal mobility opportunities in one place - so you can reinvent yourself one skill at a time." />
+<meta name="theme-color" content="#0062E3">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" sizes="144x144" href="https://prod.degreedcdn.com/content/img/touch_icon_144.png?v=1079504129046564">
+<link rel="stylesheet" type="text/css" href="https://prod.degreedcdn.com/content/fonts/inter/inter.css?v=1079504129046564">
+<link rel="apple-touch-icon" sizes="57x57" href="https://prod.degreedcdn.com/content/img/touch_icon_57.jpg?v=1079504129046564">
+<link rel="apple-touch-icon" sizes="114x114" href="https://prod.degreedcdn.com/content/img/touch_icon_114.jpg?v=1079504129046564">
+<link rel="apple-touch-icon" sizes="72x72" href="https://prod.degreedcdn.com/content/img/touch_icon_72.jpg?v=1079504129046564">
+<link rel="apple-touch-icon" sizes="144x144" href="https://prod.degreedcdn.com/content/img/touch_icon_144.png?v=1079504129046564">
+<link rel="canonical" href="https://degreed.com/plan/1499097" />
+<script src="https://prod.degreedcdn.com/scripts/libs/modernizr.custom.js?v=3.6.0-d"></script>
+<!--[if lte IE 9]>
+    <script src="https://prod.degreedcdn.com/scripts/libs/json2.min.js"></script>
+<![endif]-->
+
+    <link id="base-css" rel="stylesheet" href="https://prod.degreedcdn.com/content/styles/css/degreed_app-base.css?v=1079504129046564">
+    <link id="vendor-css" rel="stylesheet" href="https://prod.degreedcdn.com/content/styles/css/degreed_app-vendor.css?v=1079504129046564">
+    <link id="modules-css" rel="stylesheet" href="https://prod.degreedcdn.com/content/styles/css/degreed_app-modules.css?v=1079504129046564">
+    <link id="mods-css" rel="stylesheet" href="https://prod.degreedcdn.com/content/styles/css/degreed_app-mods.css?v=1079504129046564">
+    <link id="ngx-css" rel="stylesheet" href="https://prod.degreedcdn.com/scripts/deploy/dgapp/styles.css?v=1079504129046564">
+        
+    
+
+
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-29459635-1"></script>
+<script>
+        // GA
+        function configGoogleAnalytics() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { window.dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'UA-29459635-1', {
+                'cookie_domain': 'auto',
+                'cookie_expires': 31536000, // Time for 12 months in seconds
+                'cookie_prefix': 'degreed',
+                'page': window.location.pathname,
+                'anonymize_ip': true
+            });
+            window.dgHasClientTracker = true;
+        }
+        // if the client provider GA id is provided we will create the GA object and send pageviews
+        if ('UA-29459635-1' != '') {
+          if (window.Osano) {
+              window.Osano.cm.addEventListener("osano-cm-consent-saved", function (consentObject) {
+                  if (consentObject.OPT_OUT !== 'ACCEPT') { 
+                      configGoogleAnalytics();
+                  }
+              });
+          } else {
+              configGoogleAnalytics();
+          }
+        }
+</script>
+
+    <base href="/plan/1499097">
+</head>
+<body>
+        <div id="header-placeholder" style="background-color: #FbFbFb; height: 5.5rem; position: fixed; width: 100%; z-index: 0;"></div>
+        <dg-skip-nav></dg-skip-nav>
+    
+    
+    <div class="l_max-screen" ng-class="{'l_max-screen--no-header': false}">
+            <dg-app-header
+                degreed-logo="::'https://prod.degreedcdn.com/content/img/branding/degreed-logo-glasses-grayscale.svg?v=1079504129046564'"
+                show-brand-logo="::true"
+                has-light-text="::false"
+                should-hide-global-search="::false"
+                hide-banner-header="::false"
+                ng-if="!false"
+  brand-name="::'Capgemini Next'"     brand-logo="::'https://prod.degreedcdn.com/content/img/org/421-a0faeb0f-45a8-4753-b473-9c2f19b82fd8.png?v=1079504129046564'"     brand-color="::'#FbFbFb'"   
+            ></dg-app-header>
+
+        <div class="l_body-wrap">
+            <dg-breadcrumb></dg-breadcrumb>
+            <div class="l_content grid center-item" ng-class="{'drawer-isopen-right':drawerIsOpenRight}">
+                <main id="main" class="l_main rel grid__col-12 grid__col--bleed center-item" tabindex="-1">
+                    <dgx-root>
+                        
+<script type="text/javascript">
+    var id = 1499097;
+</script>
+
+<div ui-view></div>
+
+
+                    </dgx-root>
+                </main>
+            </div>
+            <footer class="l_feedback">
+                
+                <dgx-zendesk-widget
+                    class="js-feedback"
+                ></dgx-zendesk-widget>
+            </footer>
+        </div>
+        <dg-session-timeout></dg-session-timeout>
+    </div>
+    
+
+
+
+
+        
+
+<script id="globals">
+  var __GLOBALS__ = (__GLOBALS__ || {});
+  __GLOBALS__['blobBaseUrl'] = 'https://prod.degreedcdn.com';
+  __GLOBALS__['cacheBuster'] = '1079504129046564';
+</script>
+
+
+
+    <!--PROD: Angular Differential Loading (ES2015) Reference: https://angular.io/guide/deployment#differential-loading -->
+    <script crossorigin="anonymous" src="https://prod.degreedcdn.com/scripts/deploy/dgapp/runtime-es2015.js?v=1079504129046564" type="module"></script>  
+    <script crossorigin="anonymous" src="https://prod.degreedcdn.com/scripts/deploy/dgapp/polyfills-es2015.js?v=1079504129046564" type="module"></script> 
+    <script crossorigin="anonymous" src="https://prod.degreedcdn.com/scripts/deploy/dgapp/vendor-es2015.js?v=1079504129046564" type="module" defer></script>
+    <script crossorigin="anonymous" src="https://prod.degreedcdn.com/scripts/deploy/dgapp/main-es2015.js?v=1079504129046564" type="module" defer></script>
+    <script crossorigin="anonymous" src="https://prod.degreedcdn.com/scripts/deploy/dgapp/search-search-module-es2015.js?v=1079504129046564" type="module" defer></script>
+
+    
+<script id="eventsourcePolyfill">
+    if(!Modernizr.eventsource){
+        document.write('<script src="https://prod.degreedcdn.com/scripts/libs/polyfill/eventsourcepolyfill.js"><\/script>');
+    }
+</script>
+<script src="https://prod.degreedcdn.com/scripts/deploy/libs1.js?v=1079504129046564"></script>
+<script src="https://prod.degreedcdn.com/scripts/deploy/libs2.js?v=1079504129046564"></script>
+<script src="https://prod.degreedcdn.com/scripts/deploy/libs3.js?v=1079504129046564"></script>
+<script src="https://prod.degreedcdn.com/scripts/deploy/libs4.js?v=1079504129046564"></script>
+<script src="https://prod.degreedcdn.com/scripts/deploy/libs5.js?v=1079504129046564"></script>
+<script src="https://prod.degreedcdn.com/scripts/deploy/dg-app1.js?v=1079504129046564"></script>
+<script src="https://prod.degreedcdn.com/scripts/deploy/dg-app2.js?v=1079504129046564"></script>
+<script src="https://prod.degreedcdn.com/scripts/deploy/dg-app3.js?v=1079504129046564"></script>
+<script src="https://prod.degreedcdn.com/scripts/deploy/dg-app4.js?v=1079504129046564"></script>
+<script src="https://prod.degreedcdn.com/scripts/deploy/dg-app5.js?v=1079504129046564"></script>
+<script src="https://prod.degreedcdn.com/scripts/deploy/dg-app6.js?v=1079504129046564"></script>
+<script src="https://prod.degreedcdn.com/scripts/deploy/dg-templates1.js?v=1079504129046564"></script>
+<script src="https://prod.degreedcdn.com/scripts/deploy/dg-templates2.js?v=1079504129046564"></script>
+<script src="https://prod.degreedcdn.com/scripts/deploy/dg-templates3.js?v=1079504129046564"></script>
+<script src="https://prod.degreedcdn.com/scripts/deploy/dg-templates4.js?v=1079504129046564"></script>
+<script src="https://prod.degreedcdn.com/scripts/deploy/dg-templates5.js?v=1079504129046564"></script>
+<script src="https://prod.degreedcdn.com/scripts/deploy/dg-templates6.js?v=1079504129046564"></script>
+
+    
+
+    
+<script id="security">
+    angular.module('degreedApp').config(["$httpProvider", function($httpProvider) {
+        $httpProvider.defaults.xsrfCookieName = 'antiforgery-request.v3.degreed.com';
+    }]);
+</script>
+<script id="FileAPI">
+    FileAPI = {
+        
+        jsUrl: "https://prod.degreedcdn.com/scripts/libs/fileupload/fileapi.min.js",
+        
+        flashUrl: "https://prod.degreedcdn.com/scripts/libs/fileupload/fileapi.flash.swf",
+        
+    }
+</script>
+
+<script id="svg">
+    
+    dgInitSvg('https://prod.degreedcdn.com/content/svg-icons/store/small.svg?v=1079504129046564');
+</script>
+
+
+<script src="https://prod.degreedcdn.com/scripts/locales/angular-locale_en.js?v=1079504129046564"></script>
+
+
+<div class="a11y-hide" id="a11yNewWindowDescription">Opens an external site in a new window</div>
+
+
+<div class="a11y-main-live-region" aria-live="polite" id="ToastrRegionPolite"></div>
+<div class="a11y-main-live-region" aria-live="assertive" id="ToastrRegionAssertive"></div>
+
+<div class="a11y-main-live-region" aria-live="polite" id="AriaLivePolite"></div>
+<div class="a11y-main-live-region" aria-live="assertive" id="AriaLiveAssertive"></div>
+
+    
+
+
+<script src="/api/translations/translate?bundle=web-app&culture=en-US&v=4.2.0" defer></script>
+        <script id="i18nConfig">
+            degreedApp.config(["$translateProvider", "WEB_APP_I18N_STRINGS", function ($translateProvider, WEB_APP_I18N_STRINGS) {
+                $translateProvider.translations('en-US', WEB_APP_I18N_STRINGS);
+                $translateProvider.preferredLanguage('en-US');
+                $translateProvider.useSanitizeValueStrategy(null);
+            }]);
+        </script>
+
+
+    
+
+
+<script id="userSvc">
+angular.module('degreedApp').factory('userSvc', ["$filter", function ($filter) {
+
+        var authUser = {"userName":"KEDAR KRISHNA BHAT","userId":"9adc0e61-5f5d-435a-b98b-4d335cf5ff3d","userKey":14101126,"userPic":"https://prod.degreedcdn.com/content/img/default-profile.png?v=1079504129046564","userUrl":"dguserby7g","jobRole":null,"onboardDate":"2021-09-24T11:19:31.74","isRestrictedProfile":false,"isPrivateProfile":false,"isSkillInventoryClient":false,"isSkillAnalyticsClient":false,"userInterests":[],"orgInfo":[{"OrganizationId":421,"Name":"Capgemini Next","Image":"https://prod.degreedcdn.com/content/img/org/421-a0faeb0f-45a8-4753-b473-9c2f19b82fd8.png?v=1079504129046564","EndorsedImage":"https://prod.degreedcdn.com/content/img/org/421-523da9c7-c1d2-4931-91ff-79e37fc2705f.png?v=1079504129046564","Type":"Tenant","OrganizationCode":"capgemini","Groups":[{"GroupId":700061,"Name":"NEETA DSILVA\u0027s Team","Type":"Private"}],"HasScorm":false,"HasCredSpark":true,"HasContentHosting":false,"OrgRole":"Member","HasPex":false,"OrganizationBranding":{"BrandColor":"#FbFbFb","UseLightText":false,"OrganizationNameInOnboarding":false}}],"defaultOrgId":421,"showDataPrivacyAcceptance":false,"showRecommendationPolicyAcceptance":false,"showReceiveRecommendationPolicyAcceptance":false,"canRestrictContent":false,"canRecommendItems":true,"canAssignLearning":false,"canComment":true,"canShareSocial":true,"canShareOpportunity":false,"canViewManageOrgLink":true,"canBulkUpload":true,"canUploadVideo":true,"hasChannel":false,"hasChannelManagePathwayPermission":false,"hasChannelManageTargetPermission":false,"canRecommendRatings":true,"canAssignRatings":false,"isManager":false,"isTargetAuthor":false,"isEngaged":false,"participateInUserSurveys":true,"showInAppTips":true,"hasCareerMobility":false,"hasManageIntegrations":false,"orgRatingScale":{"ScaleId":5,"Name":"8 Point","AnchorLow":1,"AnchorHigh":8},"allowRestrictedImages":true,"canCreatePrivateGroups":true,"canAuthorContent":true,"canViewPathwayEnrollees":true,"isClientProvider":false,"assignedLearningEnabled":true,"hideExternalCatalog":false,"hideExternalPeople":false,"hidePersonalIntegrationsInUserProfileSettings":false,"careerPathingEnabled":true,"enableActiveUserInsights":true,"enableSkillInsightsDashboard":false,"disableBulkUpload":false,"disableCollaboratorsHeader":false,"disableUserGeneratedContent":false,"denyComments":false,"disableAnalytics":false,"canRequestManagerRating":false,"disableRatingsInsights":false,"disableRatingsDescriptions":false,"canCertifySkills":false,"canEvaluateSkills":false,"downloadableReportPermissionReadOnly":false,"clientGoogleAnalyticsId":null,"disableOrgPathwayHeaderImage":false,"useOriginalProfileAvatar":false,"enforceRecommendationPolicy":false,"enforceReceiveRecommendationPolicy":false,"enablePrimaryPlanOnDashboard":false,"orgEndorsedImagePath":"~/content/img/org/421-523da9c7-c1d2-4931-91ff-79e37fc2705f.png","disableThirdPartyExperienceManagement":false,"disableEngagedLearner":false,"hasCareerPathing":true,"disableIndividualSkillsData":false,"enableParticipateInUserSurveys":false,"enableShowInAppTips":true,"enableTeamSpace":true,"enableSkillCoachFullOrg":false,"lockProfilePrivacy":false,"lockSkillSelfRatingVisibility":false,"lockSkillManagerRatingVisibility":false,"hideOverviewTab":false,"hideOverviewExperience":false,"hideOverviewAchievement":false,"minimumSkillUserCount":2,"enablePathwayBadgeTrigger":false,"enableMentorshipOpportunities":true,"opportunitiesActivityStartDate":"2021-10-05T00:00:00"};
+        authUser.userName = $filter('decodeHtml')(authUser.userName);
+        // Reconstruct defaultOrgInfo to avoid duplicating it in JSON
+        authUser.defaultOrgInfo = authUser.orgInfo && authUser.orgInfo.filter(function(o) {
+            return o.OrganizationId == authUser.defaultOrgId;
+        })[0];
+        return {
+        ownerIsViewing: false,
+        analyticsEnabled: false,
+        anonymousUserId: 'sess:oirkguwutkcna1hskr0uftw4',
+        getAuthUser: function() {
+            return authUser;
+        },
+        getUserInterests: function() {
+            return authUser ? authUser.userInterests : [];
+        },
+        getOwnerUser: function() {
+
+                return null;
+                    },
+        clearAuthUserCache: function () {
+            // clear auth state and cache version key
+            localStorage.removeItem('authUser:v');
+            localStorage.removeItem('isLoggedIn');
+        },
+    };
+}]);
+</script>
+<script id="featureFlags">
+
+    var user = {
+        key: '14101126',
+        custom: {
+            UserKey: 14101126,
+            Org: 421,
+            Role: 'Member'
+        }
+    };
+    window.ldclientsdk = LDClient.initialize(
+        '5d2d052951ef5906f1c14065',
+        user,
+        options = {
+                bootstrap: {"Customize-Browse-011121":true,"Plans-Enhancements-020121":false,"actionable-focus-skill-list":false,"activities-svc-ngx-migration":false,"add-skill-popover":false,"angular-routing-profile":true,"bulk-upload-ui":true,"career-mobility-landing-page-access":true,"catalog-created-by-metadata":false,"create-pathway-posts":true,"dcm-april-2021-major-release":true,"dcm-august-2021-major-release":true,"dcm-june-2021-major-release":true,"dcm-mentorship-opportunities":true,"dcm-october-2021-major-release":true,"degreed-career-mobility-early-access":false,"degreed-checkpoints":false,"degreed-family-08122020":false,"dg-active-user-chart":false,"dg-add-tile":false,"dg-browse-view":false,"dg-channel-bundle-svc":false,"dg-channel-svc":false,"dg-check-duplicate-input":true,"dg-comment-thread":false,"dg-comments-service":false,"dg-content-catalog":false,"dg-flex-framework-migration":false,"dg-flex-insights":false,"dg-flex-pathway-sections-chart":false,"dg-flex-skill-sections-chart":false,"dg-group-reporting":false,"dg-input-counts-by-type":false,"dg-input-statistics":true,"dg-learning-chart":false,"dg-learning-summary-details":false,"dg-link-text-section":true,"dg-markdown-editor":true,"dg-migration-accomplishment-form":{"modal":true},"dg-migration-add-comment":false,"dg-migration-article-form":{"userMediaSvc":false,"modal":false},"dg-migration-assessment-form":{"credSparkSvc":false,"modal":false,"userAssessmentSvc":false,"commentsSvc":false},"dg-migration-author-video":false,"dg-migration-award-form":{"modal":true},"dg-migration-badge-form":{"badgeSvc":true,"modal":true,"userBadgeSvc":true},"dg-migration-book-form":{"bookSvc":true,"modal":true,"userBookSvc":true},"dg-migration-certificate-form":{"modal":true},"dg-migration-comment":false,"dg-migration-comment-thread":false,"dg-migration-degree-form":{"modal":true,"userOutcomeDegreeSvc":true},"dg-migration-downloadable-reports":false,"dg-migration-ebb-header":false,"dg-migration-episode-form":{"userEpisodeSvc":true,"modal":true},"dg-migration-event-form":{"modal":false,"userEventSvc":false},"dg-migration-outcome-form":{"modal":true,"userOutcomeSvc":true},"dg-migration-position-form":{"userPositionSvc":false,"modal":false},"dg-migration-services":{"tipSvc":false},"dg-migration-settings-extensions":false,"dg-migration-video-form":{"modal":true},"dg-new-search-users":false,"dg-org-reports-nav":false,"dg-pathway-insights":false,"dg-pathway-tracking-links":true,"dg-popular-data-chart":false,"dg-post-form-modal":true,"dg-profile-plans":false,"dg-reset-password":true,"dg-resource-list-item":true,"dg-section-head":true,"dg-skill-and-role-plan-tracking-links":false,"dg-skill-inventory-chart":false,"dg-skill-progression-chart":false,"dg-skill-ratings-chart":false,"dg-skill-review":true,"dg-skill-review-endorsement":true,"dg-target-resources-form":true,"dg-tenant-ftp-status-details-modal":false,"dg-tile-action-option":true,"dg-top-groups":false,"dg-tracking-links-table":true,"dg-user-tile":false,"dgx-content-catalog":false,"dgx-free-text-row":false,"focus-skill-quick-add":true,"ftp-bulk-process-completion":true,"ftp-details-page-061720":true,"help-in-profile-menu":true,"hide-people-from-browse":false,"ie-11-notification-031521":true,"insights-april-major":true,"insights-june-2021-major":false,"insights-skill-analytics":false,"job-role-integration-ux-09212020":false,"knowledge-center-zendesk":true,"learner-home-preview":true,"live-events-authoring-modal-05042021":true,"manage-api-keys":true,"manage-in-app-reports":true,"manage-organizations-providers":true,"manage-outbound-report-schedule":false,"manage-skills-skill-role-flags":{"columnEndorsed":true,"editRole":true,"searchSkills":true,"columnContentCount":false,"addRole":true,"sortIsSuggested":false,"columnSource":true,"deleteSkill":true,"sortIsMarked":false,"columnContent":true,"addToPathway":false,"downloadSkills":true,"columnOnboardingUpdate":true,"sortIsEndorsed":true,"columnFollowerCount":false,"sortFollowerCount":false,"columnDescription":true,"downloadRoles":true,"editSkill":true,"searchRoles":true,"addToPlan":false,"showTabRole":true,"columnMarkAsPlan":true,"uploadRoles":true,"cloneSkill":false,"columnPathwayCount":false,"uploadSkills":true,"columnSkills":true,"columnFollowers":false,"columnPathways":false,"sortPathwayCount":false,"sortSource":true,"addToContent":false,"cloneRole":false,"sortRoles":true,"sortSkills":true,"deleteRole":true,"addSkill":true,"actionsRole":true,"sortContentCount":false,"variation":2,"actionsSkill":true},"minimum-users-insights-skills":false,"multi-select-combo-box":true,"new-content-modal":false,"new-image-uploader":false,"new-onboarding-nov-2020":false,"new-people-cards":false,"new-primary-plan-control":true,"ngx-activities":false,"ngx-pathway-router-06072021":false,"ngx-pathway-service-05262021":true,"ngx-reporting-route":false,"ngx-upgrade-dg-group-edit-member-modal-list-072121":false,"ngx-upgrade-dg-group-members-072321":false,"ngx-upgrade-dg-group-overview-062521":true,"ngx-upgrade-dg-group-settings-061021":true,"ngx-upgrade-dg-group-tags-list-062521":true,"ngx-upgrade-dg-groups-edit":true,"ngx-upgrade-dg-search-groups-060421":false,"ngx-upgrade-dg-settings-tabs-061021":true,"ngx-upgrade-dg-share-tabs-062121":true,"ngx-upgrade-group-comment":false,"ngx-upgrade-profile-collection":true,"ngx-upgrade-profile-settings":false,"ngx-upgrade-sc-router":true,"ngx-upgrade-signup":false,"opportunities-smarter-matching-07072020":true,"opportunity-marketplace":true,"osano-cookie-banner":true,"oss-license-information":false,"pathway-badge-trigger":false,"pathway-content-viewed-status-temp-mar2020":true,"pathway-layout-v4-031120":true,"peer-ratings-phase-1":false,"pending-rating-notification":true,"personal-skill-career-insights":false,"personal-skill-insights-120320":false,"pluralsight-skills-integration-09172020":false,"points-decommission":false,"primary-plan-toggle-in-modal":true,"privacy-policy-update-v-7-0-rollout":true,"problem-report-updated-flow":true,"product-switcher-nav":true,"profile-overview-tab":true,"profile-parsing":false,"profile-skills-list-view-09212020":true,"profile-tab-assignments":true,"profile-tab-saved-for-later":true,"profile-tab-shared":true,"remove-profile-integrations":true,"reporting-content-completions-download-08282020":false,"reporting-october-release":true,"search-provider-landing-pages-111220":true,"search-results-v2-temp-030220":true,"search-show-recency-boost-091120":true,"search-skills-suggestions":true,"see-empty-pathway-sections":false,"self-manager-skill-rating-visibility-08272020":true,"show-skills-suggestion-cloud":true,"skill-cert-cutoff-starts":true,"skill-cert-sunset-in-progress":false,"skill-coach-all-skills-list-120420":true,"skill-coach-learning-insights-101920":true,"skill-coach-learning-poc":false,"skill-coach-li-date-filter-031521":true,"skill-coach-li-member-filter-031521":true,"skill-coach-li-mgr-of-mgr-030921":false,"skill-coach-li-mgr-of-mgr-050521":true,"skill-coach-message-banner-011421":true,"skill-coach-profile-nav":false,"skill-coach-self-rating":true,"skill-coach-self-rating-email-052621":false,"skill-coach-skill-review-temp-012221":true,"skill-coach-total-ratings-on-profile":true,"skill-parse-demo":false,"skill-scale-6-points":false,"skill-signal-charts-aug-mr":true,"skills-registry-admin-suggestions":false,"skills-registry-search-suggestions":false,"sunset-your-team":false,"tag-tile-rating-signal-07272020":true,"team-space-insights-temp-080320":true,"team-space-manager-enabled-v1-061220":false,"team-space-skill-recommendations-10022020":true,"team-space-v1-temp-043020":false,"transform-data-refactor":false,"updated-content-cards":true,"upgraded-add-associations-modal":false,"user-tour-experiment":true,"web-rum":false,"web-rum-tracing":false,"$flagsState":{"Customize-Browse-011121":{"variation":0,"version":72},"Plans-Enhancements-020121":{"variation":1,"version":2},"actionable-focus-skill-list":{"variation":1,"version":3},"activities-svc-ngx-migration":{"variation":1,"version":2},"add-skill-popover":{"variation":1,"version":2},"angular-routing-profile":{"variation":0,"version":4},"bulk-upload-ui":{"variation":0,"version":36},"career-mobility-landing-page-access":{"variation":0,"version":5},"catalog-created-by-metadata":{"variation":1,"version":2},"create-pathway-posts":{"variation":0,"version":20},"dcm-april-2021-major-release":{"variation":0,"version":4},"dcm-august-2021-major-release":{"variation":0,"version":4},"dcm-june-2021-major-release":{"variation":0,"version":5},"dcm-mentorship-opportunities":{"variation":0,"version":9},"dcm-october-2021-major-release":{"variation":0,"version":4},"degreed-career-mobility-early-access":{"variation":1,"version":8},"degreed-checkpoints":{"variation":1,"version":10},"degreed-family-08122020":{"variation":1,"version":14},"dg-active-user-chart":{"variation":1,"version":2},"dg-add-tile":{"variation":1,"version":5},"dg-browse-view":{"variation":1,"version":2},"dg-channel-bundle-svc":{"variation":1,"version":6},"dg-channel-svc":{"variation":1,"version":2},"dg-check-duplicate-input":{"variation":0,"version":3},"dg-comment-thread":{"variation":1,"version":5},"dg-comments-service":{"variation":1,"version":3},"dg-content-catalog":{"variation":1,"version":2},"dg-flex-framework-migration":{"variation":1,"version":7},"dg-flex-insights":{"variation":1,"version":2},"dg-flex-pathway-sections-chart":{"variation":1,"version":2},"dg-flex-skill-sections-chart":{"variation":1,"version":2},"dg-group-reporting":{"variation":1,"version":2},"dg-input-counts-by-type":{"variation":1,"version":2},"dg-input-statistics":{"variation":0,"version":3},"dg-learning-chart":{"variation":1,"version":2},"dg-learning-summary-details":{"variation":1,"version":2},"dg-link-text-section":{"variation":0,"version":3},"dg-markdown-editor":{"variation":0,"version":3},"dg-migration-accomplishment-form":{"variation":1,"version":2},"dg-migration-add-comment":{"variation":1,"version":2},"dg-migration-article-form":{"variation":0,"version":8},"dg-migration-assessment-form":{"variation":0,"version":10},"dg-migration-author-video":{"variation":1,"version":2},"dg-migration-award-form":{"variation":1,"version":7},"dg-migration-badge-form":{"variation":1,"version":2},"dg-migration-book-form":{"variation":1,"version":6},"dg-migration-certificate-form":{"variation":1,"version":2},"dg-migration-comment":{"variation":1,"version":3},"dg-migration-comment-thread":{"variation":1,"version":2},"dg-migration-degree-form":{"variation":1,"version":2},"dg-migration-downloadable-reports":{"variation":1,"version":3},"dg-migration-ebb-header":{"variation":1,"version":2},"dg-migration-episode-form":{"variation":1,"version":4},"dg-migration-event-form":{"variation":0,"version":8},"dg-migration-outcome-form":{"variation":1,"version":3},"dg-migration-position-form":{"variation":0,"version":7},"dg-migration-services":{"variation":0,"version":5},"dg-migration-settings-extensions":{"variation":1,"version":2},"dg-migration-video-form":{"variation":1,"version":13},"dg-new-search-users":{"variation":1,"version":5},"dg-org-reports-nav":{"variation":1,"version":2},"dg-pathway-insights":{"variation":1,"version":2},"dg-pathway-tracking-links":{"variation":0,"version":5},"dg-popular-data-chart":{"variation":1,"version":8},"dg-post-form-modal":{"variation":0,"version":3},"dg-profile-plans":{"variation":1,"version":4},"dg-reset-password":{"variation":0,"version":6},"dg-resource-list-item":{"variation":0,"version":5},"dg-section-head":{"variation":0,"version":3},"dg-skill-and-role-plan-tracking-links":{"variation":1,"version":2},"dg-skill-inventory-chart":{"variation":1,"version":2},"dg-skill-progression-chart":{"variation":1,"version":2},"dg-skill-ratings-chart":{"variation":1,"version":2},"dg-skill-review":{"variation":0,"version":3},"dg-skill-review-endorsement":{"variation":0,"version":3},"dg-target-resources-form":{"variation":0,"version":3},"dg-tenant-ftp-status-details-modal":{"variation":1,"version":2},"dg-tile-action-option":{"variation":0,"version":3},"dg-top-groups":{"variation":1,"version":2},"dg-tracking-links-table":{"variation":0,"version":5},"dg-user-tile":{"variation":1,"version":2},"dgx-content-catalog":{"variation":1,"version":2},"dgx-free-text-row":{"variation":1,"version":2},"focus-skill-quick-add":{"variation":0,"version":5},"ftp-bulk-process-completion":{"variation":0,"version":31},"ftp-details-page-061720":{"variation":0,"version":57},"help-in-profile-menu":{"variation":0,"version":9},"hide-people-from-browse":{"variation":1,"version":4},"ie-11-notification-031521":{"variation":0,"version":6},"insights-april-major":{"variation":0,"version":11},"insights-june-2021-major":{"variation":1,"version":10},"insights-skill-analytics":{"variation":1,"version":18},"job-role-integration-ux-09212020":{"variation":1,"version":4},"knowledge-center-zendesk":{"variation":0,"version":17},"learner-home-preview":{"variation":0,"version":37},"live-events-authoring-modal-05042021":{"variation":0,"version":6},"manage-api-keys":{"variation":0,"version":3},"manage-in-app-reports":{"variation":0,"version":6},"manage-organizations-providers":{"variation":0,"version":16},"manage-outbound-report-schedule":{"variation":1,"version":63},"manage-skills-skill-role-flags":{"variation":1,"version":127},"minimum-users-insights-skills":{"variation":1,"version":3},"multi-select-combo-box":{"variation":0,"version":6},"new-content-modal":{"variation":1,"version":6},"new-image-uploader":{"variation":1,"version":8},"new-onboarding-nov-2020":{"variation":1,"version":24},"new-people-cards":{"variation":1,"version":3},"new-primary-plan-control":{"variation":0,"version":11},"ngx-activities":{"variation":1,"version":2},"ngx-pathway-router-06072021":{"variation":1,"version":3},"ngx-pathway-service-05262021":{"variation":0,"version":3},"ngx-reporting-route":{"variation":1,"version":3},"ngx-upgrade-dg-group-edit-member-modal-list-072121":{"variation":1,"version":2},"ngx-upgrade-dg-group-members-072321":{"variation":1,"version":2},"ngx-upgrade-dg-group-overview-062521":{"variation":0,"version":3},"ngx-upgrade-dg-group-settings-061021":{"variation":0,"version":3},"ngx-upgrade-dg-group-tags-list-062521":{"variation":0,"version":3},"ngx-upgrade-dg-groups-edit":{"variation":0,"version":5},"ngx-upgrade-dg-search-groups-060421":{"variation":1,"version":5},"ngx-upgrade-dg-settings-tabs-061021":{"variation":0,"version":3},"ngx-upgrade-dg-share-tabs-062121":{"variation":0,"version":3},"ngx-upgrade-group-comment":{"variation":1,"version":2},"ngx-upgrade-profile-collection":{"variation":0,"version":5},"ngx-upgrade-profile-settings":{"variation":1,"version":2},"ngx-upgrade-sc-router":{"variation":0,"version":4},"ngx-upgrade-signup":{"variation":1,"version":2},"opportunities-smarter-matching-07072020":{"variation":0,"version":15},"opportunity-marketplace":{"variation":0,"version":7},"osano-cookie-banner":{"variation":0,"version":7},"oss-license-information":{"variation":1,"version":2},"pathway-badge-trigger":{"variation":1,"version":4},"pathway-content-viewed-status-temp-mar2020":{"variation":0,"version":6},"pathway-layout-v4-031120":{"variation":0,"version":42},"peer-ratings-phase-1":{"variation":1,"version":15},"pending-rating-notification":{"variation":0,"version":8},"personal-skill-career-insights":{"variation":1,"version":3},"personal-skill-insights-120320":{"variation":1,"version":11},"pluralsight-skills-integration-09172020":{"variation":1,"version":42},"points-decommission":{"variation":1,"version":3},"primary-plan-toggle-in-modal":{"variation":0,"version":14},"privacy-policy-update-v-7-0-rollout":{"variation":0,"version":4},"problem-report-updated-flow":{"variation":0,"version":5},"product-switcher-nav":{"variation":0,"version":15},"profile-overview-tab":{"variation":0,"version":22},"profile-parsing":{"variation":1,"version":5},"profile-skills-list-view-09212020":{"variation":0,"version":13},"profile-tab-assignments":{"variation":0,"version":6},"profile-tab-saved-for-later":{"variation":0,"version":5},"profile-tab-shared":{"variation":0,"version":5},"remove-profile-integrations":{"variation":0,"version":4},"reporting-content-completions-download-08282020":{"variation":1,"version":4},"reporting-october-release":{"variation":0,"version":5},"search-provider-landing-pages-111220":{"variation":0,"version":8},"search-results-v2-temp-030220":{"variation":0,"version":60},"search-show-recency-boost-091120":{"variation":0,"version":8},"search-skills-suggestions":{"variation":0,"version":7},"see-empty-pathway-sections":{"variation":1,"version":3},"self-manager-skill-rating-visibility-08272020":{"variation":0,"version":14},"show-skills-suggestion-cloud":{"variation":0,"version":4},"skill-cert-cutoff-starts":{"variation":0,"version":9},"skill-cert-sunset-in-progress":{"variation":1,"version":6},"skill-coach-all-skills-list-120420":{"variation":0,"version":8},"skill-coach-learning-insights-101920":{"variation":0,"version":16},"skill-coach-learning-poc":{"variation":1,"version":3},"skill-coach-li-date-filter-031521":{"variation":0,"version":10},"skill-coach-li-member-filter-031521":{"variation":0,"version":11},"skill-coach-li-mgr-of-mgr-030921":{"variation":1,"version":7},"skill-coach-li-mgr-of-mgr-050521":{"variation":0,"version":5},"skill-coach-message-banner-011421":{"variation":0,"version":3},"skill-coach-profile-nav":{"variation":1,"version":3},"skill-coach-self-rating":{"variation":0,"version":5},"skill-coach-self-rating-email-052621":{"variation":1,"version":2},"skill-coach-skill-review-temp-012221":{"variation":0,"version":5},"skill-coach-total-ratings-on-profile":{"variation":0,"version":3},"skill-parse-demo":{"variation":1,"version":8},"skill-scale-6-points":{"variation":1,"version":2},"skill-signal-charts-aug-mr":{"variation":0,"version":8},"skills-registry-admin-suggestions":{"variation":1,"version":4},"skills-registry-search-suggestions":{"variation":1,"version":2},"sunset-your-team":{"variation":1,"version":2},"tag-tile-rating-signal-07272020":{"variation":0,"version":9},"team-space-insights-temp-080320":{"variation":0,"version":14},"team-space-manager-enabled-v1-061220":{"variation":1,"version":16},"team-space-skill-recommendations-10022020":{"variation":0,"version":5},"team-space-v1-temp-043020":{"variation":1,"version":3},"transform-data-refactor":{"variation":1,"version":2},"updated-content-cards":{"variation":0,"version":35},"upgraded-add-associations-modal":{"variation":1,"version":4},"user-tour-experiment":{"variation":0,"version":9},"web-rum":{"variation":1,"version":4},"web-rum-tracing":{"variation":1,"version":4}},"$valid":true,"DisableEngagedLearner":false},
+            baseUrl: 'https://ld.degreed.com',
+            eventsUrl: 'https://ld.degreed.com',
+            streamUrl: 'https://ld.degreed.com'
+        }
+    );
+    angular.module('degreedApp').constant('LDClientSDK', window.ldclientsdk)
+</script>
+<script src="https://www.datadoghq-browser-agent.com/datadog-rum-v3.js" type="text/javascript"></script>
+<script id="ddRUM">
+    // Datadog RUM LD Flags
+    var isRumEnabled = window.ldclientsdk.variation('web-rum', false);
+    var isRumTracingAllowed = window.ldclientsdk.variation('web-rum-tracing', false);
+
+    // Only init when the LD flag is enabled
+    if (isRumEnabled) {
+
+
+        var rumOptions = {
+            applicationId: '470c256e-86be-4424-8747-fa187577e5bf',
+            clientToken: 'pub80a67e9705b8e40a087cde874dc906f3',
+            site: 'datadoghq.com',
+            service: 'degreed.web',
+            env: 'Production',
+            sampleRate: 100,
+            trackInteractions: true          
+        }
+        
+        // Only do tracing when the LD flag is enabled, for POC hardcode staging
+        if (isRumTracingAllowed) {
+            rumOptions = Object.assign({}, rumOptions, {allowedTracingOrigins: ["https://staging.degreed.com"]});
+        }
+
+        // Init DD-RUM
+        window.DD_RUM && window.DD_RUM.init(rumOptions);
+
+        // Set user-id as user-profile-key to be able to search/filter
+        DD_RUM.onReady(function() {
+            DD_RUM.setUser({
+                id: '14101126'
+            })
+        });
+    }
+</script>
+
+    
+
+<script id="helperSvc">
+    angular.module('degreedApp').factory('helperSvc', ["$cookies", function ($cookies) {
+        var cacheBuster = '1079504129046564';
+        var analytics = {
+            appLocation: '',
+            sessionId: 'oirkguwutkcna1hskr0uftw4'
+        };
+        var pascalCasePattern = new RegExp('^([A-Z])([a-z]+)');
+        var camelCase = changePropCasing(lowerFirst);
+        var pascalCase = changePropCasing(upperFirst);
+        var paths = {
+            getAnalyticsUrl: function (path) {
+                var analyticsEndpoint = 'https://analytics.degreed.com';
+                if (path) {
+                    return analyticsEndpoint + path;
+                }
+                return analyticsEndpoint;
+            },
+            getBlobUrl: function (url, staticUrl) {
+                // set staticUrl to true if you want to exclude blob during debug.
+                // staticUrl is typically used for images we add to the /img directory rather than something that got uploaded.
+                var blobPath = 'https://prod.degreedcdn.com',
+                    blobUrl;
+
+                if (typeof url !== 'string') {
+                    return blobPath;
+                } else if (url.lastIndexOf('http', 0) === 0) {
+                    return url;
+                } else {
+                    if (url.lastIndexOf('~/', 0) === 0) {
+                        url = url.replace('~/', '/');
+                    }
+                    if (staticUrl) {
+                    }
+                }
+
+                blobUrl = blobPath + url;
+                    blobUrl += "?v=" + cacheBuster;
+
+                return blobUrl;
+            },
+            validateOrigin: function (originToValidate) {
+                var regex, isValidOrigin;
+                var originParts = originToValidate.split('//');
+
+                if (originParts[0] !== 'https:') {
+                    return false;
+                }
+
+                if (originParts[1] === 'localhost:44300' || originParts[1].indexOf('ngrok') > -1) {
+                   return true;
+                }
+
+                regex = new RegExp(/(.*\.|^)degreed\.com$/i);
+                isValidOrigin = regex.test(originParts[1]);
+                return isValidOrigin;
+            },
+            getProfilePath: function () {
+                return '/dashboard?p=1';
+            },
+            getZendeskUrl: function(articlePath) {
+                if (articlePath.indexOf('/') !== 0) {
+                    articlePath = '/' + articlePath;
+                }
+                const url = encodeURIComponent('https://degreed.zendesk.com/hc/en-us' + articlePath);
+                return '/HelpdeskSAML/ZenDeskSSOInitiator?url=' + url;
+            }
+        }
+
+        function getCookieSuffix () {
+            return 'degreed.com';
+        }
+
+        function setAppLocation(location) {
+            analytics.appLocation = location;
+        }
+
+        function lowerFirst(propname) {
+            if (pascalCasePattern.test(propname)) {
+                return propname.charAt(0).toLowerCase() + propname.slice(1);
+            }
+            return propname;
+        }
+        function upperFirst(propname) {
+            if (pascalCasePattern.test(propname)) {
+                return propname;
+            }
+            return propname.charAt(0).toUpperCase() + propname.slice(1);
+        }
+        function changePropCasing(casingFn) {
+            var objExclusionList = ['providerImageInfo']; // don't change case of items within these objects
+            return function change(obj) {
+                if (typeof obj !== 'object' || obj === null || obj instanceof Date) {
+                    return obj;
+                }
+
+                var r = {};
+                Object.keys(obj).forEach(function(k) {
+                    var v = obj[k];
+                    var pk = casingFn(k);
+                    if(objExclusionList.indexOf(k) !== -1) {
+                        r[pk]=v;
+                    } else if (Array.isArray(v)) {
+                        r[pk] = v.map(function(item) {
+                            return change(item);
+                        });
+                    } else {
+                        r[pk] = change(v);
+                    }
+                });
+                return r;
+            };
+        }
+        function camelCaseKeys(obj) {
+            return camelCase(obj);
+        }
+        function pascalCaseKeys(obj) {
+            return pascalCase(obj);
+        }
+
+        return {
+            cacheBuster: cacheBuster,
+            camelCaseKeys: camelCaseKeys,
+            analytics: analytics,
+            paths: paths,
+            getCookieSuffix: getCookieSuffix,
+            pascalCaseKeys: pascalCaseKeys,
+            setAppLocation: setAppLocation
+        }
+    }]);
+</script>
+
+
+    <script id="constants">
+        angular.module('degreedApp').constant('BRAND_COLOR', '#FbFbFb');
+        angular.module('degreedApp').constant('IS_RTL', false);
+    </script>
+    <script id="cdnurl">
+        function cdnUrl(resource) {
+            return 'https://prod.degreedcdn.com' + resource;
+        }
+    </script>
+    
+
+    
+    
+    <script src="https://prod.degreedcdn.com/scripts/app/routes/flex.js?v=1079504129046564"></script>
+    <script id="FlexIdSvc">
+        angular.module('degreedApp').factory('FlexIdSvc', function () {
+            var flex = {
+                id: 1499097
+            };            
+            return {
+                flex: flex
+            };
+        });
+    </script>
+    <script id="BreadcrumbSvc">
+        angular.module('degreedApp').factory('BreadcrumbSvc', ['$rootScope', '$filter', function ($rootScope, $filter) {
+            var tree = [];
+            return {
+                getTree: function(){ return tree; },
+                setTree: function(newTree){
+                    tree = newTree;
+                    $rootScope.$broadcast('reloadTree');
+                },
+                clearTree: function(){ 
+                    tree = [];
+                    $rootScope.$broadcast('reloadTree');
+                }
+            };
+        }]);
+    </script>
+    <script id="TargetSvc">
+        angular.module('degreedApp').factory('TargetSvc', function () {
+            return {
+                target: {
+                    alreadyPrimaryPlan: false
+                },
+                context: undefined,
+                permissions: {
+                    userCanEditTarget: false,
+                    userHasReportsPermission: false,
+                    isTrackableLinksDisabled: false,
+                }
+            };
+        });
+    </script>
+
+</body>
+
+</html>
